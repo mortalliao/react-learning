@@ -5,6 +5,7 @@ import Home from './components/HomeComponent';
 import Hello from './components/HelloComponent';
 import About from './components/AboutComponent';
 import Books from './components/BooksComponent';
+import Login from './pages/login/Login'
 
 
 // import route Components here
@@ -35,6 +36,7 @@ class App extends Component {
 
           <Switch>
             <Route exact path="/" component={Home} />
+            <Route path="/login" component={Login} />
             <Route path="/about" component={About} />
             <Route path="/hello" component={Hello} />
             <Route path="/books" component={Books} />
